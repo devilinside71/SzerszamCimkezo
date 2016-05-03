@@ -121,6 +121,7 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="SzerszLista.xlsm" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="LabelSamples.xml">
