@@ -24,16 +24,16 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.LabelMegnevezes = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBoxKod = New System.Windows.Forms.TextBox()
+        Me.LabelMegnevezes = New System.Windows.Forms.Label()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBoxDb = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ComboBoxPrinter = New System.Windows.Forms.ComboBox()
-        Me.TextBoxKod = New System.Windows.Forms.TextBox()
-        Me.TextBoxDb = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
@@ -75,16 +75,6 @@ Partial Class Form1
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(556, 46)
         Me.TableLayoutPanel2.TabIndex = 0
         '
-        'LabelMegnevezes
-        '
-        Me.LabelMegnevezes.AutoSize = True
-        Me.LabelMegnevezes.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LabelMegnevezes.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.LabelMegnevezes.Location = New System.Drawing.Point(3, 52)
-        Me.LabelMegnevezes.Name = "LabelMegnevezes"
-        Me.LabelMegnevezes.Size = New System.Drawing.Size(556, 52)
-        Me.LabelMegnevezes.TabIndex = 1
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -94,6 +84,25 @@ Partial Class Form1
         Me.Label1.Size = New System.Drawing.Size(78, 33)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Kód:"
+        '
+        'TextBoxKod
+        '
+        Me.TextBoxKod.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextBoxKod.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.TextBoxKod.Location = New System.Drawing.Point(91, 3)
+        Me.TextBoxKod.Name = "TextBoxKod"
+        Me.TextBoxKod.Size = New System.Drawing.Size(462, 40)
+        Me.TextBoxKod.TabIndex = 1
+        '
+        'LabelMegnevezes
+        '
+        Me.LabelMegnevezes.AutoSize = True
+        Me.LabelMegnevezes.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.LabelMegnevezes.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.LabelMegnevezes.Location = New System.Drawing.Point(3, 52)
+        Me.LabelMegnevezes.Name = "LabelMegnevezes"
+        Me.LabelMegnevezes.Size = New System.Drawing.Size(556, 52)
+        Me.LabelMegnevezes.TabIndex = 1
         '
         'TableLayoutPanel3
         '
@@ -120,6 +129,16 @@ Partial Class Form1
         Me.Label2.Size = New System.Drawing.Size(108, 33)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Darab:"
+        '
+        'TextBoxDb
+        '
+        Me.TextBoxDb.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextBoxDb.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.TextBoxDb.Location = New System.Drawing.Point(121, 3)
+        Me.TextBoxDb.Name = "TextBoxDb"
+        Me.TextBoxDb.Size = New System.Drawing.Size(208, 40)
+        Me.TextBoxDb.TabIndex = 1
+        Me.TextBoxDb.Text = "1"
         '
         'TableLayoutPanel4
         '
@@ -163,31 +182,12 @@ Partial Class Form1
         'ComboBoxPrinter
         '
         Me.ComboBoxPrinter.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComboBoxPrinter.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.ComboBoxPrinter.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
         Me.ComboBoxPrinter.FormattingEnabled = True
         Me.ComboBoxPrinter.Location = New System.Drawing.Point(169, 3)
         Me.ComboBoxPrinter.Name = "ComboBoxPrinter"
-        Me.ComboBoxPrinter.Size = New System.Drawing.Size(249, 33)
+        Me.ComboBoxPrinter.Size = New System.Drawing.Size(249, 28)
         Me.ComboBoxPrinter.TabIndex = 2
-        '
-        'TextBoxKod
-        '
-        Me.TextBoxKod.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBoxKod.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.TextBoxKod.Location = New System.Drawing.Point(92, 3)
-        Me.TextBoxKod.Name = "TextBoxKod"
-        Me.TextBoxKod.Size = New System.Drawing.Size(461, 40)
-        Me.TextBoxKod.TabIndex = 1
-        '
-        'TextBoxDb
-        '
-        Me.TextBoxDb.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBoxDb.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.TextBoxDb.Location = New System.Drawing.Point(121, 3)
-        Me.TextBoxDb.Name = "TextBoxDb"
-        Me.TextBoxDb.Size = New System.Drawing.Size(208, 40)
-        Me.TextBoxDb.TabIndex = 1
-        Me.TextBoxDb.Text = "1"
         '
         'Form1
         '
