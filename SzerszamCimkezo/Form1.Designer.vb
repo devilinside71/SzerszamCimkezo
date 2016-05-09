@@ -26,7 +26,6 @@ Partial Class Form1
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBoxKod = New System.Windows.Forms.TextBox()
-        Me.LabelMegnevezes = New System.Windows.Forms.Label()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBoxDb = New System.Windows.Forms.TextBox()
@@ -34,6 +33,7 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ComboBoxPrinter = New System.Windows.Forms.ComboBox()
+        Me.TextBoxMegnev = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
@@ -45,9 +45,9 @@ Partial Class Form1
         Me.TableLayoutPanel1.ColumnCount = 1
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.LabelMegnevezes, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel3, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel4, 0, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.TextBoxMegnev, 0, 1)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -93,16 +93,6 @@ Partial Class Form1
         Me.TextBoxKod.Name = "TextBoxKod"
         Me.TextBoxKod.Size = New System.Drawing.Size(462, 40)
         Me.TextBoxKod.TabIndex = 1
-        '
-        'LabelMegnevezes
-        '
-        Me.LabelMegnevezes.AutoSize = True
-        Me.LabelMegnevezes.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LabelMegnevezes.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.LabelMegnevezes.Location = New System.Drawing.Point(3, 52)
-        Me.LabelMegnevezes.Name = "LabelMegnevezes"
-        Me.LabelMegnevezes.Size = New System.Drawing.Size(556, 52)
-        Me.LabelMegnevezes.TabIndex = 1
         '
         'TableLayoutPanel3
         '
@@ -189,6 +179,15 @@ Partial Class Form1
         Me.ComboBoxPrinter.Size = New System.Drawing.Size(249, 28)
         Me.ComboBoxPrinter.TabIndex = 2
         '
+        'TextBoxMegnev
+        '
+        Me.TextBoxMegnev.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextBoxMegnev.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.TextBoxMegnev.Location = New System.Drawing.Point(3, 55)
+        Me.TextBoxMegnev.Name = "TextBoxMegnev"
+        Me.TextBoxMegnev.Size = New System.Drawing.Size(556, 29)
+        Me.TextBoxMegnev.TabIndex = 4
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -213,7 +212,6 @@ Partial Class Form1
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBoxKod As TextBox
-    Friend WithEvents LabelMegnevezes As Label
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBoxDb As TextBox
@@ -221,4 +219,5 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents ComboBoxPrinter As ComboBox
+    Friend WithEvents TextBoxMegnev As TextBox
 End Class

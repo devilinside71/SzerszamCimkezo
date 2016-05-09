@@ -8,8 +8,8 @@
 
         s = labelcodes(0)
         s = s.Replace("VONALKOD", Form1.TextBoxKod.Text)
-        s = s.Replace("SZERSZAMMEGNEV", Form1.LabelMegnevezes.Text)
-        s = s.Replace("SZERSZAMZPL", ZebraPrint.GetZPLutf8Code(Form1.LabelMegnevezes.Text))
+        s = s.Replace("SZERSZAMMEGNEV", Form1.TextBoxMegnev.Text)
+        s = s.Replace("SZERSZAMZPL", ZebraPrint.GetZPLutf8Code(Form1.TextBoxMegnev.Text))
         s = s.Replace("LABELQTY", Form1.TextBoxDb.Text)
 
         Console.WriteLine(s)
