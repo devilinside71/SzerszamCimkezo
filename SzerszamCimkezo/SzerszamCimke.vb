@@ -8,15 +8,14 @@
 
         s = labelcodes(0)
         s = s.Replace("VONALKOD", Form1.TextBoxKod.Text)
-        s = s.Replace("SZERSZAMMEGNEV", Form1.LabelMegnevezes.Text)
-        s = s.Replace("SZERSZAMZPL", ZebraPrint.GetZPLutf8Code(Form1.LabelMegnevezes.Text))
+        s = s.Replace("SZERSZAMMEGNEV", Form1.TextBoxMegnev.Text)
+        s = s.Replace("SZERSZAMZPL", ZebraPrint.GetZPLutf8Code(Form1.TextBoxMegnev.Text))
         s = s.Replace("LABELQTY", Form1.TextBoxDb.Text)
 
         Console.WriteLine(s)
+
         ' Open the printer dialog box, and then allow the user to select a printer.
         'res = ZebraPrint.SendStringToPrinter(Trim(Form1.ComboBoxPrinter.Text), s)
-
-
     End Sub
     Public Function GetMegnev(kod As String) As String
         GetMegnev = vbNullString

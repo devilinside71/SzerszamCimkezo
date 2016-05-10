@@ -19,7 +19,7 @@
         Dim strKat As String
         strKat = Trim(TextBoxKod.Text)
         If Len(strKat) = 10 Then
-            LabelMegnevezes.Text = GetMegnev(TextBoxKod.Text)
+            TextBoxMegnev.Text = GetMegnev(TextBoxKod.Text)
             TextBoxDb.SelectAll()
             TextBoxDb.Focus()
             gintEnterCounter = 0
@@ -36,10 +36,10 @@
             gintEnterCounter = gintEnterCounter + 1
             If gintEnterCounter = 2 Then
                 'MsgBox("Nyomtat")
-                If LabelMegnevezes.Text <> "" Then
+                If TextBoxMegnev.Text <> "" Then
                     Call PrintZPL()
                 End If
-                LabelMegnevezes.Text = ""
+                TextBoxMegnev.Text = ""
                 TextBoxKod.Focus()
                 gintEnterCounter = 0
             End If
