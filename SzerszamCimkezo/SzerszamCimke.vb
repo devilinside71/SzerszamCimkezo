@@ -15,7 +15,7 @@
         Console.WriteLine(s)
 
         ' Open the printer dialog box, and then allow the user to select a printer.
-        'res = ZebraPrint.SendStringToPrinter(Trim(Form1.ComboBoxPrinter.Text), s)
+        res = ZebraPrint.SendStringToPrinter(Trim(Form1.ComboBoxPrinter.Text), s)
     End Sub
     Public Function GetMegnev(kod As String) As String
         GetMegnev = vbNullString
