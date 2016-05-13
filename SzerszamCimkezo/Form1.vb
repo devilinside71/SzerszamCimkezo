@@ -41,6 +41,7 @@
                 End If
                 TextBoxMegnev.Text = ""
                 TextBoxKod.Focus()
+                TextBoxKod.Text = ""
                 gintEnterCounter = 0
             End If
         End If
