@@ -195,7 +195,7 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(562, 262)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Name = "Form1"
-        Me.Text = "Szerszám címkéző"
+        Me.Text = "Szerszám címkéző      ©2020 Sanatmetal Kft Logisztika"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
         Me.TableLayoutPanel2.ResumeLayout(False)
